@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scanActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/tempLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolbar1">
+
+        <ImageView
+            android:id="@+id/dpIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@id/dpIV"
+            android:text="name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/enrollmentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/dpIV"
+            android:textColor="@color/black"
+            android:text="Email-ID here"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="@color/light_blue"
+        android:text="Scan Attendance"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scannerView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:backgroundTint="@color/black"
+        android:id="@+id/container">
+
+        <androidx.camera.view.PreviewView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/camPreview"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_preview" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
